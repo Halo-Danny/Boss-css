@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, 'Microsoft Yahei', sans-serif;
+}
+
+.home-header {
+  background: url(../images/home-bg.png) no-repeat;
+  /* 两个参数一个宽度，一个高度 */
+  background-size: 100% auto;
+}
+
