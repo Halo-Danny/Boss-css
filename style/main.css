@@ -1,11 +1,93 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, 'Microsoft Yahei', sans-serif;
+  color: #7e8793;
 }
 
 .home-header {
   background: url(../images/home-bg.png) no-repeat;
   /* 两个参数一个宽度，一个高度 */
   background-size: 100% auto;
+  text-align: center;
+  padding-bottom: 2rem;
 }
 
+.home-header > img {
+  width: 67%;
+  /* rem 根路径字体大小尺寸*/
+  margin: 2.3rem;
+}
+
+.home-header form {
+  background: white;
+  width: 90%;
+  margin: 0 auto;
+  /* 在保证高度撑高的同时，保证里面的内容是垂直居中的 */
+  line-height: 2.2rem;
+  border-radius: 2.2rem;
+  /* 在两个嵌套的div，如果外层div的父容器padding值为0，
+  那么内层div的margin-top或者margin-bottom的值会转移给外层div，也就是父容器的父容器。
+  所以我这里选择给它的父元素加padding,而不是用margin */
+  /* margin-bottom: 2rem; */
+}
+
+.home-header form input {
+  width: 75%;
+  /* 去除input自带的样式 */
+  border: none;
+  /* 去掉输入文字自带高亮的框 */
+  outline: none;
+  color:#999;
+  font-size: 0.85rem;
+}
+
+.home-header form button {
+  font-size: 0.9rem;
+  color: #5bd4c7;
+  /* 去除边框背景 */
+  outline: none;
+  border: none;
+  background-color: white;
+}
+
+.home-categories{
+  padding: 0 1rem;
+}
+
+.home-categories dt {
+  display: flex;
+  align-items: center;
+  color: #333;
+}
+
+.home-categories dt img {
+  height: 3rem;
+  margin-right: 1rem;
+}
+
+.home-categories dd {
+  /* 和下面的0.4rem刚好抵消,为了让第一列的元素和图标对齐 */
+  margin: 0 -0.4rem;
+}
+
+.home-categories dd .tag {
+  background: #f5f8f9;
+  color: #7e8793;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  border-radius: 2rem;
+  /* 去掉a标签的默认下划线 */
+  text-decoration: none;
+  margin: 0.2rem 0.4rem;
+  font-size: 0.8rem;
+}
+
+.home-footer {
+  width: 70%;
+  margin: 0 auto;
+  font-size: 0.75rem;
+}
+
+.home-footer p {
+  margin: 0.2rem 0;
+}
